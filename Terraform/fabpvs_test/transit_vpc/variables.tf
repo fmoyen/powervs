@@ -1,0 +1,25 @@
+##############################################################################
+# Transit VPC Variables
+##############################################################################
+
+variable "tags" {
+  description = "List of tags"
+  type        = list(string)
+}
+
+variable "region" {
+  description = "IBM Cloud Region where resources will be provisioned"
+  type        = string
+}
+
+variable "prefix" {
+  description = "Name prefix that will be prepended to named resources"
+  type        = string
+}
+
+variable "transit_rg_id" {
+  description = "ID for the resource group transit-rg"
+  type        = string
+}
+
+##############################################################################
